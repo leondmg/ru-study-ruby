@@ -9,11 +9,7 @@ module Exercise
       def search(array, query)
         return -1 if array.nil? || array.empty?
 
-        if array.size == 1
-          array[0] == query ? 0 : -1
-        else
-          binary_search(array, query, 0, array.size - 1)
-        end
+        binary_search(array, query, 0, array.size - 1)
       end
 
       private
